@@ -1,0 +1,197 @@
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+
+/**
+ * CONTENTS
+ *
+ * COLORS
+ * Greens.....................Green colors and their shades
+ * Oranges....................Orange colors and their shades
+ * Neutral....................Neutral colors
+ * Gradients..................Gradients
+ *
+ * TYPOGRAPHY
+ * Font Families..............The fonts used in the design system
+ * Sizing.....................Font sizing
+ *
+ * SPACING
+ * Spacing defaults...........Spacing between elements
+ *
+ * LAYOUT
+ * Widths.....................Layout and columns widths
+ *
+ * BORDERS
+ * Border styles..............Border styles
+ * Border Radius..............Border radius definitions
+ *
+ * ANIMATION
+ * Animation Speed............Transition/animation speed variables
+ * Animation easing...........Easing variables
+ *
+ * BREAKPOINTS
+ * Breakpoints................Global breakpoint definitions
+ */
+
+/*------------------------------------*\
+     #COLORS
+ \*------------------------------------*/
+
+/**
+* Morning scheme
+*/
+$color-morning: hsl(54, 100%, 80%); // #FFF597
+$color-morning-20: hsl(54, 100%, 20%); // #665c00
+$color-morning-25: hsl(54, 100%, 25%); // #807300
+$color-morning-50: hsl(54, 100%, 50%); // #FFE500
+$gradient-morning: linear-gradient(
+  180deg,
+  $color-morning 0%,
+  $color-morning-50 100%
+);
+
+/**
+* Afternoon scheme
+*/
+$color-afternoon: hsl(30, 100%, 80%); // #FFCB97
+$color-afternoon-20: hsl(30, 100%, 20%); // #663300
+$color-afternoon-25: hsl(30, 100%, 25%); // #804000
+$color-afternoon-70: hsl(30, 100%, 70%); // #FFB366
+$gradient-afternoon: linear-gradient(
+  180deg,
+  $color-afternoon 0%,
+  $color-afternoon-70 100%
+);
+
+/**
+* Night scheme
+*/
+$color-night: hsl(246, 100%, 80%); // #A197FF
+$color-night-20: hsl(246, 100%, 20%); // #0A0066
+$color-night-25: hsl(246, 100%, 25%); // #0D0080
+$color-night-75: hsl(246, 100%, 75%); // #8C80FF
+$gradient-night: linear-gradient(180deg, $color-night 0%, $color-night-75 100%);
+
+/**
+* Neutral Colors
+*/
+$color-neutral-white: #fff;
+$color-neutral-black: #000;
+$color-neutral-grey-60: hsla(0, 0%, 60%, 1);
+$color-neutral-grey-95: hsla(0, 0%, 95%, 1);
+
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+
+/**
+ * Font Family
+ */
+$font-family-primary: "Lato", sans-serif;
+$font-family-secondary: "Libre Franklin", serif;
+
+/**
+ * Font Sizing
+ */
+
+$font-size-base: 18px;
+
+// 5.653em (101.75px)
+$font-size-1: 5.653rem;
+
+// 1.999em (35.99px)
+$font-size-2: 1.999rem;
+
+// 1.414em (25.45px)
+$font-size-3: 1.414rem;
+
+// 1rem (18px)
+$font-size-4: 1rem;
+
+/**
+ * Line Height
+ */
+$line-height-text: 1.65;
+$line-height-headings: 1.15;
+$line-height-micro: 1.15;
+
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+
+/**
+ * Spacing and offsets
+ * 1) Used to space grids and body padding
+ */
+
+$module: 8px;
+$spacing: 8px;
+// clamp(8px, number, maxNumber)
+// https://sass-lang.com/documentation/modules/math#clamp
+$spacing-small: round(0.5 * $spacing);
+$spacing-large: round(2 * $spacing);
+
+$spacing-v: 8px;
+$spacing-v-small: round(0.5 * $spacing-v);
+$spacing-v-large: round(2 * $spacing-v);
+
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+/**
+ * Widths
+ */
+$l-max-width: 320px !default;
+$l-vertical-max-width: 320px !default; // 17.777rem based on 18px
+$l-vertical-max-height: 568px !default; //
+
+/*------------------------------------*\
+    #BORDERS
+\*------------------------------------*/
+
+/**
+ * Border Width
+ */
+$border-base: 1px solid $color-neutral-grey-60;
+$border-dotted: 1px dotted $color-neutral-grey-60;
+$border-print: 2px solid $color-neutral-grey-60;
+
+/**
+ * Border radius
+ */
+$border-radius: 25%;
+
+/*------------------------------------*\
+    #ANIMATION
+\*------------------------------------*/
+
+/**
+ * Transition Speed
+ */
+$anim-fade-quick: 0.15s;
+$anim-fade-long: 0.5s;
+
+/**
+ * Transition Ease
+ */
+$anim-ease: ease-out;
+
+/*------------------------------------*\
+    #BREAKPOINTS
+\*------------------------------------*/
+
+/**
+* Breakpoints used in media queries
+* 1) These are not the only breakpoints used, but they provide a few defaults
+*/
+$bp-small: 28rem; // 560px
+$bp-med: 38rem; // 760px
+$bp-large: 51rem; // 1020
+
+/*------------------------------------*\
+    #TOP BAR
+\*------------------------------------*/
+
+$top-bar-min-height: 5 * $module;
+$top-bar-height: 5 * $module;

@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #MIXINS
+\*------------------------------------*/
+
+@mixin typographyHeading1() {
+  font-size: $font-size-1;
+}
+
+@mixin typographyHeading2() {
+  font-size: $font-size-2;
+}
+
+@mixin typographyHeading3() {
+  font-size: $font-size-4;
+}

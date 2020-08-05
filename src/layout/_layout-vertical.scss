@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+$primary-area: 320px;
+$primary-area-min: 320px;
+$secondary-area: 208px;
+$secondary-area-min: 208px;
+// $primary-area: calc(62vh - $top-bar-height);
+// $primary-area-min: calc($l-vertical-max-height - $top-bar-height);
+// $secondary-area: 38vh;
+// $secondary-area-min: calc($l-vertical-max-height * 0.38);
+
+.l-vertical {
+  max-width: $l-vertical-max-width;
+  max-height: $l-vertical-max-height;
+  padding: 0;
+  line-height: 1;
+
+  display: grid;
+  grid-template-rows:
+    minmax($top-bar-min-height, $top-bar-height) minmax(
+      $primary-area-min,
+      $primary-area
+    )
+    minmax($secondary-area-min, $secondary-area);
+}

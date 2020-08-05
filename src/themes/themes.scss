@@ -1,0 +1,34 @@
+.c-weather {
+  color: $color-neutral-black;
+  background: $color-neutral-white;
+
+  .c-action-button {
+    color: $color-neutral-grey-60;
+    background-color: $color-neutral-grey-95;
+  }
+}
+
+.c-weather--morning {
+  color: $color-morning-20;
+  background: $gradient-morning;
+
+  .c-action-button {
+    color: $color-morning-20;
+    background-color: $color-morning-50;
+  }
+
+  .c-temperature-indicator {
+    &__feelslike {
+      color: $color-morning-25;
+    }
+  }
+
+  .c-weather-measure {
+    .weather-icon {
+      color: $color-morning-25;
+    }
+    &__value-smaller {
+      color: $color-morning-25;
+    }
+  }
+}

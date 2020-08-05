@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-family-secondary;
+  text-transform: none;
+  font-weight: normal;
+  line-height: $line-height-headings;
+}
+
+/**
+ * Heading 1 base styles
+ */
+h1 {
+  @include typographyHeading1();
+}
+
+/**
+ * Heading 2 base styles
+ */
+h2 {
+  @include typographyHeading2();
+}
+
+/**
+ * Heading 3 base styles
+ */
+h3 {
+  @include typographyHeading3();
+}

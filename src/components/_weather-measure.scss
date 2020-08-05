@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #WEATHER MEASURE
+\*------------------------------------*/
+
+.c-weather-measure {
+  display: flex;
+  align-items: center;
+  font-size: $font-size-3;
+  text-align: center;
+  justify-content: center;
+
+  &__value {
+    text-align: center;
+  }
+
+  &__value-smaller {
+    font-size: $font-size-4;
+  }
+}

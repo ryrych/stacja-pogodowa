@@ -1,0 +1,15 @@
+.no-background {
+  background-color: transparent;
+}
+
+.h-print-hidden {
+  @media print {
+    display: none;
+  }
+}
+
+.h-break-page {
+  @media print {
+    page-break-after: always;
+  }
+}

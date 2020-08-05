@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Front-end starter</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Libre+Franklin:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="bundle.js"></script>
+    <main role="main">
+      <div class="l-container">
+        <div class="c-weather c-weather--morning l-vertical">
+          <div class="c-top-bar c-top-bar--with-action">
+            <div class="c-top-bar__text">
+              Wrocław, 29 lip 11:53
+            </div>
+            <div class="c-action-button">
+              <div class="c-top-bar__body">
+                Odśwież
+              </div>
+            </div>
+          </div>
+          <div class="c-weather__primary">
+            <div class="c-temperature-indicator">
+              <div class="c-temperature-indicator__icon">
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+              </div>
+              <span class="c-temperature-indicator__current">24°</span>
+              <span class="c-temperature-indicator__feelslike">22</span>
+            </div>
+
+            <span class="c-weather-status"
+              >Duże zachmurzenie z licznymi opadami</span
+            >
+          </div>
+          <div class="c-weather__secondary">
+            <div class="c-weather-measure">
+              <img
+                class="weather-icon"
+                src="images/weather-icons/wi-thermometer.svg"
+              />
+
+              <span class="c-weather-measure__value">15–28°</span>
+            </div>
+            <div class="c-weather-measure">
+              <img
+                class="weather-icon"
+                src="images/weather-icons/wi-humidity.svg"
+              />
+              <span class="c-weather-measure__value"
+                >42<span class="c-weather-measure__value-smaller">%</span>
+              </span>
+            </div>
+            <div class="c-weather-measure">
+              <img
+                class="weather-icon"
+                src="images/weather-icons/wi-barometer.svg"
+              />
+              <span class="c-weather-measure__value"
+                >1600<span class="c-weather-measure__value-smaller"
+                  >Hpa</span
+                ></span
+              >
+            </div>
+            <div class="c-weather-measure">
+              <img
+                class="weather-icon"
+                src="images/weather-icons/wi-cloud.svg"
+              />
+              <span class="c-weather-measure__value"
+                >15<span class="c-weather-measure__value-smaller">%</span></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

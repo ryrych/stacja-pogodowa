@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #BODY
+\*------------------------------------*/
+
+/**
+ * HTML base styles
+ */
+html {
+  font-size: $font-size-base;
+  min-height: 100vh;
+}
+
+/**
+ * Body base styles
+ */
+body {
+  min-height: 100vh;
+  font-family: $font-family-primary;
+  line-height: $line-height-text;
+  background-color: $color-body-bg;
+  color: $color-body-text;
+}

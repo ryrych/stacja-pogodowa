@@ -1,0 +1,10 @@
+.l-container {
+  max-width: $l-max-width;
+  max-height: $l-vertical-max-height;
+  background-color: $color-neutral-white;
+  padding: $spacing;
+
+  @media print {
+    padding: 0;
+  }
+}

@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    #ACTION BUTTON
+\*------------------------------------*/
+
+.c-action-button {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+
+  min-height: 5 * $module;
+  min-width: 5 * $module;
+  border-radius: 0 0 0 $border-radius;
+  padding: 0 $spacing;
+
+  &__body {
+    font-size: $font-size-4;
+    font-family: $font-family-secondary;
+  }
+}

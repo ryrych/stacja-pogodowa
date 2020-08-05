@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    #TOP BAR
+\*------------------------------------*/
+
+.c-top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-height: $top-bar-height;
+  padding: 0 $spacing;
+
+  &__text {
+    font-size: $font-size-4;
+    font-family: $font-family-secondary;
+    margin: 0 auto;
+  }
+
+  &--with-action {
+    padding-right: 0;
+
+    .c-action-button {
+      margin-left: auto;
+    }
+  }
+}

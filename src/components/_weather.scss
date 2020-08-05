@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #WEATHER
+\*------------------------------------*/
+
+.c-weather {
+  &__primary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  &__secondary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}

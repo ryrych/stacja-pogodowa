@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+
+/**
+ * In this file, we take the literal colors from our palette (defined in variables.scss)
+ * and define them against variables that we can utilise anywhere throughout the project.
+ */
+
+/*------------------------------------*\
+    #GLOBAL TEXT COLOR
+\*------------------------------------*/
+
+/**
+ * Body text and background colors
+ */
+$color-body-text: $color-neutral-grey-60 !default !default;
+$color-body-bg: $color-neutral-grey-95 !default;
+
+$info-text: #264027;
+$info-background: #bfd9c0;
+
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+
+$color-links: $color-neutral-grey-60 !default;
+$color-links-hover: $color-neutral-grey-60 !default;
+$color-links-active: $color-neutral-grey-60 !default;
+$color-links-visited: $color-neutral-grey-60 !default;
